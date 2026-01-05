@@ -1202,6 +1202,69 @@
       .hero-eyebrow { font-size: 10px; }
       .section-title { font-size: 10px; }
     }
+
+    /* Ecosystem */
+    .ecosystem {
+      padding: 60px 24px;
+      border-top: 1px solid var(--border);
+      background: var(--surface);
+    }
+    .ecosystem-header {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    .ecosystem-header h2 {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--amber);
+      text-shadow: 0 0 10px var(--amber-glow);
+      margin-bottom: 8px;
+    }
+    .ecosystem-header p {
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+    .ecosystem-grid {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .ecosystem-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      padding: 20px 28px;
+      text-align: center;
+      text-decoration: none;
+      min-width: 160px;
+      transition: all 0.2s ease;
+    }
+    .ecosystem-card:hover {
+      border-color: var(--phosphor);
+      box-shadow: 0 0 10px var(--phosphor-glow);
+    }
+    .ecosystem-card.active {
+      border-color: var(--phosphor);
+    }
+    .ecosystem-icon {
+      font-size: 24px;
+      margin-bottom: 8px;
+      color: var(--phosphor);
+      text-shadow: 0 0 10px var(--phosphor-glow);
+    }
+    .ecosystem-name {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+    .ecosystem-desc {
+      font-size: 11px;
+      color: var(--text-secondary);
+    }
   </style>
 </head>
 <body>
@@ -1969,6 +2032,30 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="ecosystem">
+    <div class="ecosystem-header">
+      <h2>> The Ecosystem</h2>
+      <p>Tools for AI-native builders</p>
+    </div>
+    <div class="ecosystem-grid">
+      <a href="https://vibecodings.vercel.app" class="ecosystem-card">
+        <div class="ecosystem-icon">◉</div>
+        <div class="ecosystem-name">Vibecodings</div>
+        <div class="ecosystem-desc">Project directory</div>
+      </a>
+      <a href="https://slashvibe.dev" class="ecosystem-card">
+        <div class="ecosystem-icon">/</div>
+        <div class="ecosystem-name">/vibe</div>
+        <div class="ecosystem-desc">Social layer</div>
+      </a>
+      <a href="/" class="ecosystem-card active">
+        <div class="ecosystem-icon">▮</div>
+        <div class="ecosystem-name">Vibestation</div>
+        <div class="ecosystem-desc">Hardware guide</div>
+      </a>
     </div>
   </section>
 
